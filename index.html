@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>PLay audio books</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/dom-casmurro.jpeg" class="card-img-top" alt="capa do audio book Dom-Casmurro">
+                <div class="card-body">
+                  <div class="infos">
+                    <h4 class="card-title">Dom Casmurro</h4>
+                    <p id="numCapitulo">Capítulo 1</p>
+                  </div>
+
+                  <audio id="audioCapitulo" src="./books/1.mp3"></audio>
+
+                  <div class="bnt-play">
+                    <div class="voltarbnt">
+                        <button id="voltar" type="button"><i class="bi bi-arrow-left"></i></i></button>
+                        <p>Voltar</p>
+                    </div>
+
+                    <div class="voltar15sbnt">
+                        <button id="voltar15s" type="button"><i class="bi bi-arrow-counterclockwise"></i></button>
+                        <p>15s</p>
+                    </div>
+
+                    <div class="playbnt">
+                        <button id="playPause" type="button"><i id="iPlayPause" class="bi bi-play-circle-fill"></i></button>
+                        <p id="playPauseP" class="playp">Play</p>
+                    </div>
+
+                    <div class="avancar15sbnt">
+                        <button id="avancar15s" type="button"><i class="bi bi-arrow-clockwise"></i></button>
+                        <p>15s</p>
+                    </div>
+
+                    <div class="avancarbnt">
+                        <button id="avancar" type="button"><i class="bi bi-arrow-right"></i></button>
+                        <p>Avançar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
